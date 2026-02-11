@@ -54,6 +54,15 @@ body {
     font-size: 12px;
 }
 
+.text_xl {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.list_unstyled {
+    list-style: none;
+}
+
 /* MAIN */
 #plans {
     padding: 1rem;
@@ -78,5 +87,24 @@ body {
         padding: 1rem;
         border-radius: 1rem;
         box-shadow: 0 0 10px #80808066;
+        .card_body {
+            text-align: center;
+        }
     }
+}
+
+.features {
+ul {
+    line-height: 2rem;
+    text-align: left;
+}
+
+li > i {
+    font-size: 1.25rem;
+}
+
+li > span {
+    font-size: 14px;
+}
+
 }
