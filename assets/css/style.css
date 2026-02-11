@@ -13,19 +13,20 @@ body {
 }
 
 .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
-    padding: 1rem;
-    text-align: left;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-
-    info {
-        margin-bottom: 1rem;
-    }
-
-    .btn {
-        cursor: pointer;
-        text-align: end;
-    }
-
+.col {
+    background-color: aquamarine;
+    flex-basis: calc(100% /3 - (15px*2) / 3);
+    min-width: 290px;   
+    flex-grow: 1;
+    min-height: 400px;
 }
